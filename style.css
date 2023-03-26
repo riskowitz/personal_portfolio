@@ -9,7 +9,7 @@ header {
   background-color: lightgray;
   justify-content: space-evenly;
   display:flex;
-  position: fixed;
+  position:absolute;
   top: 0px;
   width: 80%;
 }
@@ -62,4 +62,21 @@ nav a {
 #skills img{
   max-width: 125px;
   max-height: 100px;
+}
+
+h3 {
+  cursor: pointer;
+  transform-origin: top left;
+  transition: transform 0.2s ease-in-out;
+}
+
+h3:hover{
+  transform: scale(1.2);
+}
+
+#msgContainer{
+  visibility: hidden;
+}
+#section3 p{
+  visibility: hidden;
 }
