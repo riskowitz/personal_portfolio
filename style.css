@@ -1,65 +1,87 @@
-html{
+html {
   font-size: 16px;
   font-family: sans-serif;
-  margin: 8rem;
+  margin: 0;
+  padding: 0;
 }
-
 
 header {
   background-color: lightgray;
-  justify-content: space-evenly;
-  display:flex;
-  position:absolute;
-  top: 0px;
-  width: 80%;
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 1;
 }
 
-header h1 {
+.bio {
   display: flex;
+  align-items: center;
+}
+
+.bio img {
+  margin-right: 20px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#section1 img {
+  max-width: 400px;
+  max-height: 400px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    margin: 0 10px;
+  margin: 0 1rem;
 }
 
 nav a {
   text-decoration: none;
+  color: black;
 }
 
-#section1 {
-  display: grid;
-  grid-template-columns: auto auto auto;
+main {
+  margin-top: 6rem;
+  padding: 2rem;
 }
 
-#section1 h2{
-  display: grid;
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+section p {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-#section1 p {
-  width: 30rem;
+li {
+  margin: 1rem;
 }
 
-#skills {
-  display:flex;
-  max-width: 100%;
-}
-
-#skills ul{
-  list-style: none;
-}
-
-#skills li{
-  list-style: none;
-  margin: 0 10px;
-}
-
-#skills img{
+img {
   max-width: 125px;
   max-height: 100px;
 }
@@ -77,6 +99,30 @@ h3:hover{
 #msgContainer{
   visibility: hidden;
 }
-#section3 p{
-  visibility: hidden;
+
+#footer{
+  background-color: lightgray;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+#footer ul{
+  list-style:none;
+  display:flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#footer li {
+  margin: 0 1rem;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer img {
+  max-width: 125px;
+  max-height: 100px;
 }
